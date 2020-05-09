@@ -1,0 +1,2 @@
+add_executable(12_Storing_Primitive_Types 12_Storing_Primitive_Types.cpp)
+target_link_libraries(12_Storing_Primitive_Types)

@@ -1,0 +1,2 @@
+add_executable(29_Use_ParsLine_Function 29_Use_ParsLine_Function.cpp)
+target_link_libraries(29_Use_ParsLine_Function)

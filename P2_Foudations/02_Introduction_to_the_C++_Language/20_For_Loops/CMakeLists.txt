@@ -1,0 +1,2 @@
+add_executable(20_For_Loops 20_For_Loops.cpp)
+target_link_libraries(20_For_Loops)

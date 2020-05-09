@@ -1,0 +1,2 @@
+add_executable(24_Reading_From_a_File 24_Reading_From_a_File.cpp)
+target_link_libraries(24_Reading_From_a_File)

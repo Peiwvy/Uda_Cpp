@@ -1,0 +1,2 @@
+add_executable(09_Sending_Output_to_the_Console 09_Sending_Output_to_the_Console.cpp)
+target_link_libraries(09_Sending_Output_to_the_Console)

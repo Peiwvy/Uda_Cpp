@@ -1,0 +1,2 @@
+add_executable(27_Adding_Data_to_a_Vector 27_Adding_Data_to_a_Vector.cpp)
+target_link_libraries(27_Adding_Data_to_a_Vector)

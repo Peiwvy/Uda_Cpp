@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.tex": "latex",
+        "mutex": "cpp",
+        "thread": "cpp",
+        "iostream": "cpp"
+    }
+}

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/peiwvy/Desktop/C++/P5M1 Concurrency/03_Mutexes_and_Locks/02_Using_a_Mutex_to_Protect_Shared_Data/example_4_solution.cpp
+iostream
+-
+thread
+-
+mutex
+-
+

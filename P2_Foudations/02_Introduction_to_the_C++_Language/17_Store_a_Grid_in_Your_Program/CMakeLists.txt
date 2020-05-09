@@ -1,0 +1,2 @@
+add_executable(17_Store_a_Grid_in_Your_Program 17_Store_a_Grid_in_Your_Program.cpp)
+target_link_libraries(17_Store_a_Grid_in_Your_Program)

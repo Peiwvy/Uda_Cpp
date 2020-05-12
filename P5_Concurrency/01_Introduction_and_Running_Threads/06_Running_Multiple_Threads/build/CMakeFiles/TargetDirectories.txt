@@ -1,4 +1,0 @@
-/Users/peiwvy/Desktop/C++/P5M1 Concurrency/01_Introduction_and_Running_Threads/06_Running_Multiple_Threads/build/CMakeFiles/rebuild_cache.dir
-/Users/peiwvy/Desktop/C++/P5M1 Concurrency/01_Introduction_and_Running_Threads/06_Running_Multiple_Threads/build/CMakeFiles/edit_cache.dir
-/Users/peiwvy/Desktop/C++/P5M1 Concurrency/01_Introduction_and_Running_Threads/06_Running_Multiple_Threads/build/CMakeFiles/example_2.dir
-/Users/peiwvy/Desktop/C++/P5M1 Concurrency/01_Introduction_and_Running_Threads/06_Running_Multiple_Threads/build/CMakeFiles/example_1.dir

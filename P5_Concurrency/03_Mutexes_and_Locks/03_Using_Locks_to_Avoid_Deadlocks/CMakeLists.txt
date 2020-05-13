@@ -1,0 +1,2 @@
+add_executable(03example_1_solution 03example_1_solution.cpp)
+target_link_libraries(03example_1_solution)

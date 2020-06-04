@@ -40,3 +40,5 @@ int main() {
 
     return 0;
 }
+// Values before swap: 23.2 14.83
+// Values after swap: 14.83 23.2

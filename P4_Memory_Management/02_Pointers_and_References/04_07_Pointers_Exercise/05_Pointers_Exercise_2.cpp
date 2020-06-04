@@ -31,14 +31,25 @@ void trigonometry(double angle, double *_sin, double *_cos){
 }
 
 int main(){
-    double angle, _sin, _cos;
+    double _sin, _cos;
+    double angle = 0;
 
-    std::cout << "Write angle in radians:";
-    std::cin >> angle;
+    double *ptr = nullptr;
+    ptr = &angle;
+
+    std::cout << "angle memory address:" << ptr << std::endl;
+    std::cout << "angle memory address value:" << *ptr << std::endl;
+
     std::cout << " Trigonometry values are: " << std::endl;
-    trigonometry(angle, &_sin, &_cos);
+    trigonometry(*ptr, &_sin, &_cos);
+    // trigonometry(angle, &_sin, &_cos);  OK too
     std::cout << "Sine is: "<< _sin << std::endl;
     std::cout << "Cosine is: "<< _cos << std::endl;
 
     return 0;
 }
+// angle memory address:0x7ffee080b7b0
+// angle memory address value:0
+//  Trigonometry values are: 
+// Sine is: 0
+// Cosine is: 1

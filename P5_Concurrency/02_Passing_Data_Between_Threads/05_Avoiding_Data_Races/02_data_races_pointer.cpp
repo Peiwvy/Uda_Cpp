@@ -6,30 +6,14 @@ class Vehicle
 {
 public:
     //default constructor
-    Vehicle() : _id(0), _name(new std::string("Default Name"))
-    {
+    Vehicle() : _id(0), _name(new std::string("Default Name")) {
         std::cout << "Vehicle #" << _id << " Default constructor called" << std::endl;
     }
 
     //initializing constructor
-    Vehicle(int id, std::string name) : _id(id), _name(new std::string(name))
-    {
+    Vehicle(int id, std::string name) : _id(id), _name(new std::string(name)) {
         std::cout << "Vehicle #" << _id << " Initializing constructor called" << std::endl;
     }
-
-    // copy constructor 
-    Vehicle(Vehicle const &src)
-    {
-        // QUIZ: Student code STARTS here
-        _id = src._id;
-        if (src._name != nullptr)
-        {
-            _name = new std::string;
-            *_name = *src._name;
-        }
-        // QUIZ: Student code ENDS here
-        std::cout << "Vehicle #" << _id << " copy constructor called" << std::endl;
-    };
 
     // setter and getter
     void setID(int id) { _id = id; }
@@ -64,8 +48,4 @@ int main()
 
 // Vehicle #0 Default constructor called
 // Vehicle #1 Initializing constructor called
-// Vehicle #0 copy constructor called
-// Vehicle #0 copy constructor called
-// Vehicle #0 copy constructor called
-// Vehicle #0 copy constructor called
-// Vehicle 3
+// Vehicle 2

@@ -73,8 +73,6 @@ std::cin >>_size;
     for(int i=0;i<_size;i++){
         std::cout<< ptr[i] << std::endl;
     }
-
-    
     std::cout<< "Expand value: ";
     int expandVal;
     std::cin >> expandVal;
@@ -82,9 +80,23 @@ std::cin >>_size;
     std::cout<< "ptr addr: "<< ptr << std::endl;
 
     std::cout<< "Expanded array: " << std::endl;
-    for(int i=0;i<(_size +expandVal);i++){
+    for(int i=0;i<(_size + expandVal);i++){
         std::cout<< ptr[i] << std::endl;
     }
     delete [] ptr;
     return 0;
 }
+// Size of array: 
+// 3
+// ptr addr: 0x7fc357405810
+// Created array: 
+// 0
+// 1
+// 4
+// Expand value: 1
+// ptr addr: 0x7fc357405820
+// Expanded array: 
+// 0
+// 1
+// 4
+// 0

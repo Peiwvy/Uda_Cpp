@@ -41,3 +41,7 @@ int main() {
   std::cout << " Local val: " << val << std::endl;
   return 0;
 }
+// Global val: 10                                                                                                                                                                                                                       
+// Namespace val: 5
+// Function val: 15
+// Local val: 20

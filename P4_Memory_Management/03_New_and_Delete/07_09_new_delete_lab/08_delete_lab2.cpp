@@ -34,3 +34,11 @@ int main(){
     delete [] ptr;
 
 }
+// 1
+// 2
+// 3
+// 4
+// Number 1 is stored on 0x7fb7f2405810 address.
+// Number 2 is stored on 0x7fb7f2405814 address.
+// Number 3 is stored on 0x7fb7f2405818 address.
+// Number 4 is stored on 0x7fb7f240581c address.

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <thread>
 #include <future>
+#include <memory>
 
 class Vehicle
 {
@@ -17,18 +18,14 @@ public:
         std::cout << "Vehicle #" << _id << " Initializing constructor called" << std::endl;
     }
 
-    // copy constructor 
-    Vehicle(Vehicle const &src)
+    // move constructor with unique pointer
+    Vehicle(Vehicle && src) : _name(std::move(src._name))
     {
-        // QUIZ: Student code STARTS here
-        _id = src._id;
-        if (src._name != nullptr)
-        {
-            _name = new std::string;
-            *_name = *src._name;
-        }
-        // QUIZ: Student code ENDS here
-        std::cout << "Vehicle #" << _id << " copy constructor called" << std::endl;
+        // move id to this and reset id in source
+        _id = src.getID();
+        src.setID(0);
+
+        std::cout << "Vehicle #" << _id << " move constructor called" << std::endl;
     };
 
     // setter and getter
@@ -39,8 +36,9 @@ public:
 
 private:
     int _id;
-    std::string *_name;
+    std::unique_ptr<std::string> _name;
 };
+
 
 int main()
 {
@@ -50,22 +48,22 @@ int main()
 
     // launch a thread that modifies the Vehicle name
     std::future<void> ftr = std::async([](Vehicle v) {
-        std::this_thread::sleep_for(std::chrono::milliseconds(500)); // simulate work
         v.setName("Vehicle 2");
-    },v0);
-
-    v0.setName("Vehicle 3");
+    },std::move(v0));
 
     ftr.wait();
-    std::cout << v0.getName() << std::endl;
+
+    std::cout << v0.getID() << std::endl; // this will now cause an exception
+    std::cout << v0.getName() << std::endl; // this will now cause an exception
 
     return 0;
 }
 
 // Vehicle #0 Default constructor called
 // Vehicle #1 Initializing constructor called
-// Vehicle #0 copy constructor called
-// Vehicle #0 copy constructor called
-// Vehicle #0 copy constructor called
-// Vehicle #0 copy constructor called
-// Vehicle 3
+// Vehicle #0 move constructor called
+// Vehicle #0 move constructor called
+// Vehicle #0 move constructor called
+// Vehicle #0 move constructor called
+// 0
+// [1]    99192 segmentation fault  ./a.out

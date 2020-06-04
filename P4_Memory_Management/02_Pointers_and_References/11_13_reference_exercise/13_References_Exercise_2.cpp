@@ -17,14 +17,15 @@ Steps 2
 
 using namespace std;
 
-void pass_reference(int &input){
+void pass_reference(int &input) {
+    cout << "output in pass_reference " << endl;
     cout << "input : " << input  << endl;
     cout << "input addr: " << &input  << endl;
 }
 
 void pass_pointer(int *input){
+    cout << "output in pass_pointer " << endl;
     cout << "input : " << input  << endl;
-    //input 是 pointer, 本身是需要一個空間的, 有他自己的位置
     cout << "input addr: " << &input  << endl;
     cout << "*input : " << *input  << endl;
 }
@@ -35,7 +36,6 @@ int main () {
 
     int&    ref_x = x;
     double& ref_y = y;
-
 
     cout << "Value of x reference : " << ref_x  << endl;
     cout << "Value of y reference : " << ref_y  << endl;
@@ -59,16 +59,17 @@ int main () {
 
 
 /*
-outcome: 
 Value of x reference : 0
 Value of y reference : 0
 Value of x reference : 5
 Value of y reference : 11.7
 x : 5
-x addr: 0x7ffee941d978
+x addr: 0x7ffee00be7b8
+output in pass_reference 
 input : 5
-input addr: 0x7ffee941d978
-input : 0x7ffee941d978
-input addr: 0x7ffee941d918
+input addr: 0x7ffee00be7b8
+output in pass_pointer 
+input : 0x7ffee00be7b8
+input addr: 0x7ffee00be758
 *input : 5
 */

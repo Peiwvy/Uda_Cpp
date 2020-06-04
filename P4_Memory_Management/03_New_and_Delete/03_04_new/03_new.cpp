@@ -46,6 +46,7 @@ is bad practice.
 
 
 // Example program
+// g++ -std=c++17 03_new.cpp 
 #include <iostream>
 
 int main()
@@ -63,10 +64,10 @@ int main()
 }
 // OUTPUT:
 /*
-Address: 0x1a809e0 Value: 24
-Address array: 0x1a80a00 Value array: 0
-Address: 0x1a809e0 Value: 25
-Address array: 0x1a80a00 Value array: 0
-Address: 0x1a809e0 Value: 26
-Address array: 0x1a80a00 Value array: 0
+ptr Address: 0x7faa29c05810, ptr Value: 24
+arr_ptr Address array: 0x7faa29c05820,array address:0x7faa29c05820 Value array: 0
+ptr Address: 0x7faa29c05810, ptr Value: 25
+arr_ptr Address array: 0x7faa29c05820,array address:0x7faa29c05828 Value array: 0
+ptr Address: 0x7faa29c05810, ptr Value: 26
+arr_ptr Address array: 0x7faa29c05820,array address:0x7faa29c05830 Value array: 2
 */

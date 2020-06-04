@@ -179,3 +179,6 @@ int main() {
     std::cout << "Now List contains: ";
     list.print();
 }
+// List contains: 6 8 7 
+// Removing last element: 7
+// Now List contains: 6 8 

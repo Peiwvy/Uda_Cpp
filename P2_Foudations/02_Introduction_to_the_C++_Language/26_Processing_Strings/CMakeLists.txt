@@ -1,2 +1,0 @@
-add_executable(26_Processing_Strings 26_Processing_Strings.cpp)
-target_link_libraries(26_Processing_Strings)

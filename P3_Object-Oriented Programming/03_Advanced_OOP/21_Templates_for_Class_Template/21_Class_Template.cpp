@@ -1,15 +1,11 @@
 /*
 Exercise: Class Template
 
-=> Template  也可以用在 class 上
-
 Classes are the basic building block of OOP in C++. Templates support the creation of generic classes.
 
 Class templates can be used to declare and implement generic attributes
 which will be used by generic methods. These templates can be very useful
 when building classes that will serve multiple purposes.
-可以讓一個class 有多種目標
-
 
 OBJECTIVES
     Declare class
@@ -64,8 +60,6 @@ int main()
         Size is:2
     */
 
-
-    //一個class 可以應付多種 data type
     Container<char> obj2; // Partial deduction: element type is specified
     obj2.add('A');
     obj2.print();

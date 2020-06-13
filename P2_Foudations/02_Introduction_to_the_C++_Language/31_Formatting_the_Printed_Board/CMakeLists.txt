@@ -1,2 +1,0 @@
-add_executable(31_Formatting_the_Printed_Board 31_Formatting_the_Printed_Board.cpp)
-target_link_libraries(31_Formatting_the_Printed_Board)

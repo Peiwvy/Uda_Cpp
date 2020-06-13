@@ -1,8 +1,0 @@
-add_executable(AdditionFunction AdditionFunction.cpp)
-target_link_libraries(AdditionFunction)
-
-add_executable(PrintStrings PrintStrings.cpp)
-target_link_libraries(PrintStrings)
-
-add_executable(VectorAddition VectorAddition.cpp)
-target_link_libraries(VectorAddition)

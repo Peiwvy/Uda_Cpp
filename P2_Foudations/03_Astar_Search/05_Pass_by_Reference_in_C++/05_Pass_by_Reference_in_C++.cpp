@@ -19,7 +19,6 @@ int MultiplyByTwo_passpointer(int *i) {
     return *i;
 }
 
-
 void DoubleString(string &value) {
     // Concatentate the string with a space and itself.
     value = value + " " + value;
@@ -46,7 +45,6 @@ int main() {
     int f = MultiplyByTwo_passpointer(&e);
     cout << "The int f equals: " << f << "\n";
     cout << "The int e equals: " << e << "\n";
-
 
     //Passing ref
     string s = "Hello";

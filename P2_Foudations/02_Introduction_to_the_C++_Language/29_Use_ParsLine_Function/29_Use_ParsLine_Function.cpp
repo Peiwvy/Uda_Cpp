@@ -52,6 +52,6 @@ void PrintBoard(const vector<vector<int>> board) {
 int main() {
   // TODO: Store the output of ReadBoardFile in the "board" variable.
   vector<vector<int>> board;
-  board = ReadBoardFile("../../29_Use_ParsLine_Function/1.board");
+  board = ReadBoardFile("../1.board");
   PrintBoard(board);
 }

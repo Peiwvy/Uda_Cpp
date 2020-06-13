@@ -1,2 +1,0 @@
-add_executable(19_Working_with_Vectors 19_Working_with_Vectors.cpp)
-target_link_libraries(19_Working_with_Vectors)

@@ -21,8 +21,6 @@ The compiler won't recognize this type of
 operation on its own, because this data is user defined. However, you
 can overload the + operator so it performs the action that you want to implement.
 
-=> 算子 也可以overloading
-
 
 OBJECTIVES
     1.Create Point class.
@@ -33,21 +31,16 @@ OBJECTIVES
     6.Write main() function test.
 */
 
-// include iostream for printing
+
 #include <iostream>
-// Define Point class
+
 class Point{
-    // Declare private attributes x and y
 private:
     int x;
     int y;
 public:
-    // Define public constructor
     Point(int inx=0,int iny=0): x(inx), y(iny){}
-    // Define + operator overload
-    // 用下面的方法來 overloading +
-    // The following will be automatically called when '+' is used with
-    // between two Complex objects
+
     Point operator - (Point const &obj){
         Point res;
         res.x = x-obj.x;
@@ -62,18 +55,16 @@ public:
         return res;
     }
 
-    // Define print() function to print (x,y) of Point
     void Print(){
         std::cout << "Point: (" << Point::x << ", " << Point::y << ")"<< "\n";
     }
 };
 
-// Test in main()
 int main()
 {
     Point p1(10, 5);
     Point p2(2, 4);
-    Point p = p1 + p2; // An example call to "operator +"
+    Point p = p1 + p2;
     p1.Print();
     p2.Print();
     p.Print();

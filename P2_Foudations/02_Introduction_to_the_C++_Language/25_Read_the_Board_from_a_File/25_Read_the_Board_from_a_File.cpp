@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include<fstream>
+#include <fstream>
 
 using std::cout;
 using std::string;
@@ -33,7 +33,7 @@ void PrintBoard(const vector<vector<int>> board) {
 
 int main() {
   // TODO: Call the ReadBoardFile function here.
-  string file_path = "../../25_Read_the_Board_from_a_File/1.board";
+  string file_path = "../1.board";
   ReadBoardFile(file_path);
   // Leave the following line commented out.
   // PrintBoard(board);

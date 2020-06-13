@@ -47,16 +47,12 @@ public:
 
 int main()
 {
-    //Case1: protected, private 繼承後, 不能直接存取原本 public 的變數
-    //我們可以利用以前方法, 在自己class 裡面做一個public 的get fun 來存取 此變數
     Car car;
     car.wheels=4;
 
     Bicycle bicycle;
-    //bicycle.wheels=2;//因為用protected 繼承, wheels 在  bicycle中視為protected, 無法直接存
     bicycle.set_wheel(2);//pass
     
     Scooter scooter;
-    //scooter.wheels=2;// wheels對 scooter 來說是private 的, 不能直接存取
     scooter.set_wheel(2);
-};
+}

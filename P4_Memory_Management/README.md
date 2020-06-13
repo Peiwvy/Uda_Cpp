@@ -1,17 +1,17 @@
 ## P4:Memory Management 内存管理
 
 ### Content:
-- Introduction
-- Pointers_and_References
+- 01 Introduction
+- 02 Pointers_and_References
     - Pointers Exercise
     - Reference Exercise
     - Avoiding_Data_Races
-- New and Delete
+- 03 New and Delete
     - New
     - Delete
     - memset
     - malloc
-- Smart Pointers
+- 04 Smart Pointers
     - Smart Pointers
     - resource scope
 - CppND-Garbage-Collector

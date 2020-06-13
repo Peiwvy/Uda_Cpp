@@ -2,13 +2,6 @@
 Exercise: Class Hierarchy
 Multi-level inheritance is term used for chained classes in an inheritance tree.
 Have a look at the example in the notebook below to get a feel for multi-level inheritance.
-
-基本上就是在說
-最後一個人, 可以像 chain rule 一樣, 一直往回, 用到最一開始base class的成員
-
-ex:
-    A (base class) -> B 繼承A, --> C 繼承B,
-    只要合法的情況之下, C是可以使用A裡面的東西
 */
 
 
@@ -19,7 +12,6 @@ class A
 {
     private:
         int a_attr;
-
     public:
         void set_a(int);
         int get_a() const;

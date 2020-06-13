@@ -53,7 +53,7 @@ void PrintBoard(const vector<vector<int>> board) {
 #include "read.cpp" // For testing.
 
 int main() {
-  ReadBoardFile("../../28_Parse_Lines_from_the_File/1.board");
+  ReadBoardFile("../1.board");
   TestParseLine(); // For testing.
   // Leave commented out.
   // PrintBoard(board);

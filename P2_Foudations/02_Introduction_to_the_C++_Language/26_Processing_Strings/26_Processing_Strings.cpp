@@ -116,3 +116,24 @@ int main(){
     //the INT spreated by only one char not space
     string_with_MIX_types_not_space();
 }
+// istringstream_test
+// 1
+// use_isstringstream_as_boolen_read_all
+// That stream was successful: 1
+// That stream was successful: 2
+// That stream was successful: 3
+// That stream was NOT successful!
+// common_way_to_use_istringstream_in_while
+// read: 1
+// read: 2
+// read: 3
+// The stream has failed or ended.
+// string_with_MIX_types_not_space
+// read int: 1, read char: ,
+// read int: 2, read char: ,
+// read int: 3, read char: ,
+// read int: 4, read char: ,
+// read int: 6, read char: q
+// read int: 7, read char: p
+// read int: 8, read char: o
+// The stream has failed or ended.

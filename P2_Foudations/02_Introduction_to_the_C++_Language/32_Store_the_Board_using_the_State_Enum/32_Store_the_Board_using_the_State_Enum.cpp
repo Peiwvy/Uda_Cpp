@@ -76,6 +76,6 @@ void PrintBoard(const vector<vector<State>> board) {
 }
 
 int main() {
-  auto board = ReadBoardFile("../../32_Store_the_Board_using_the_State_Enum/1.board");
+  auto board = ReadBoardFile("../1.board");
   PrintBoard(board);
 }

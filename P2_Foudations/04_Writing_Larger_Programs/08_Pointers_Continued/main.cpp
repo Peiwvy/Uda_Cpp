@@ -107,3 +107,22 @@ int main(){
     Passing_Pointers_to_Function();
     Returning_Pointer_from_Function();
 }
+// pointers_to_objects
+// 1
+// 2
+// 3
+// 1
+// 2
+// 3
+// The first element of v is: 1
+// Passing_Pointers_to_Function
+// The value of i is: 1
+// The value of i is now: 2
+// Returning_Pointer_from_Function
+// The value of i is: 1
+// The address of j is: 0x7ffee71d17cc
+// The value of i is now: 2
+// The value of the int pointed to by my_pointer is: 2
+// The address of i is: 0x7ffee71d17cc
+// The value of my_pointer is: 0x7ffee71d17cc
+// The addr of my_pointer is: 0x7ffee71d17c0

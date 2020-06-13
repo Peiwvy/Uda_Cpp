@@ -1,2 +1,0 @@
-add_executable(32_Store_the_Board_using_the_State_Enum 32_Store_the_Board_using_the_State_Enum.cpp)
-target_link_libraries(32_Store_the_Board_using_the_State_Enum)

@@ -1,2 +1,0 @@
-add_executable(16_Using_Auto 16_Using_Auto.cpp)
-target_link_libraries(16_Using_Auto)

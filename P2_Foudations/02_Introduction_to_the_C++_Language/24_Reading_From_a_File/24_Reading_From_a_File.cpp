@@ -10,7 +10,7 @@ void file_open_testing(){
     //or initial in one line
     // std::ifstream my_file(path);
     std::fstream my_file;
-    my_file.open("../../24_Reading_From_a_File/1.board");
+    my_file.open("../1.board");
 
     //this instance my_file can use as boolean to check is the file exist or not
     if (my_file){
@@ -21,7 +21,7 @@ void file_open_testing(){
 }
 
 void reading_data_from_stream(){
-    std::fstream my_file("../../24_Reading_From_a_File/1.board");
+    std::fstream my_file("../1.board");
     if(my_file){
         std::cout << "The file stream has been created!" << "\n";
         std::string line;

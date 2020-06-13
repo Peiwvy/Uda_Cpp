@@ -1,2 +1,0 @@
-add_executable(28_Parse_Lines_from_the_File 28_Parse_Lines_from_the_File.cpp)
-target_link_libraries(28_Parse_Lines_from_the_File)

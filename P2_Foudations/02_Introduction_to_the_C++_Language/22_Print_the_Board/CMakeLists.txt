@@ -1,2 +1,0 @@
-add_executable(22_Print_the_Board 22_Print_the_Board.cpp)
-target_link_libraries(22_Print_the_Board)

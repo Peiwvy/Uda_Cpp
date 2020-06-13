@@ -77,7 +77,6 @@
 // */
 
 /*
-單純的function operload, 跟以前沒啥不同
 
 Using function overload you can achieve the same thing. Consider the following example:
 

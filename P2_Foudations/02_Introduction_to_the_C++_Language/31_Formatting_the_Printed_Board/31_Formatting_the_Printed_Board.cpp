@@ -77,6 +77,6 @@ void PrintBoard(const vector<vector<int>> board) {
 }
 
 int main() {
-  auto board = ReadBoardFile("../../31_Formatting_the_Printed_Board/1.board");
+  auto board = ReadBoardFile("../1.board");
   PrintBoard(board);
 }

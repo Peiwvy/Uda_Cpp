@@ -1,2 +1,0 @@
-add_executable(14_Storing_Vectors 14_Storing_Vectors.cpp)
-target_link_libraries(14_Storing_Vectors)

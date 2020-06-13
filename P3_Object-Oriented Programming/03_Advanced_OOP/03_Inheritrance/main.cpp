@@ -14,31 +14,24 @@ Instructions
 
 
 class Vehicle {
-
     private:
         std::string model_name;
         int mileage = 0;
         int fuel_capacity=0;
-
-
     public:
         int wheels = 0;
         std::string color = "blue";
         std::string make  = "generic";
-
     void get_info() {
         std::cout << "This is a vehicle!, name: "<< model_name << "\n";
     }
     void set_name(std::string name){
         model_name = name;
     }
-
     void Print() const
     {
         std::cout << "This " << color << " " << make << " vehicle has " << wheels << " wheels!\n";
     }
-
-
 };
 
 class Car : public Vehicle {
@@ -69,18 +62,13 @@ int main() {
     std::cout << c.is_cabriolet << "\n";
     c.get_info();
 
-
-
     Truck t;
     t.has_sleeping_cabin = false;
     std::cout << t.has_sleeping_cabin << "\n";
     t.set_name("Ford T");
     t.get_info();
 
-
     Scooter scooter;
     scooter.wheels = 2;
     scooter.Print();
-
-
-};
+}

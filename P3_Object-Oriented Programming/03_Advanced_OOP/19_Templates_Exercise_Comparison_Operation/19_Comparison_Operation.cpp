@@ -1,5 +1,4 @@
 /*
-
 Exercise: Comparison Operator with template
 This lab demonstrates how a simple comparison between two variables of unknown
 type can work using templates.
@@ -9,11 +8,6 @@ In this case, by defining a template that performs
 a comparison using the > operator, you can compare two variables of any type
 (both variables must be of the same type, though)
 as long as the operator > is defined for that type.
-
-=> 雖然 運算子 > 可以利用 template 對付任何型別
-但這個case 中左右兩邊仍然要同樣型別, 比竟是比大小
-
-
 */
 
 #include <iostream>
@@ -37,7 +31,6 @@ int main()
     // The ReturnMax will work for both int and double values
 
     // Return the larger of two integers
-    // 這邊call function 時 也沒有指定 type, 直接丟進去
     int res = ReturnMax(num1, num2);
     std::cout << "Bigger one is: " << res << "\n";
     std::cout << "res type:"<< typeid(res).name() << std::endl;

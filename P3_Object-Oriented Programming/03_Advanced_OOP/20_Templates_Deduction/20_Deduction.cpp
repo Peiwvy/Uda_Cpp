@@ -73,3 +73,7 @@ print(v2);
 std::sort(v2.begin(), v2.end(), func<char>);
 print(v2);
 }
+// 9 3 2 32.32 10.323 10.0003 4.9789 
+// 2 3 4.9789 9 10.0003 10.323 32.32 
+// a Z M x Y c U 
+// M U Y Z a c x 

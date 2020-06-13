@@ -1,2 +1,0 @@
-add_executable(25_Read_the_Board_from_a_File 25_Read_the_Board_from_a_File.cpp)
-target_link_libraries(25_Read_the_Board_from_a_File)

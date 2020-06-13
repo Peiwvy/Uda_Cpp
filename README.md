@@ -20,3 +20,9 @@
 ``` bash
 g++ -std=c++17 program_name.cpp
 ```
+
+## Reference
+
+1. Udacity cpp课程
+2. [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#main)
+3. [cplusplus](http://www.cplusplus.com/info/)
